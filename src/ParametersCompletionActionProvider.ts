@@ -211,7 +211,9 @@ function traverseParameters(
   for (const p of path) {
     if (parameters[p]) {
       const shape = content.shapes[parameters[p].shape];
-      if (shape.type === "structure") {
+      if (!shape && parameters[p].members) {
+        parameters = parameters[p].members;
+      } else if (shape.type === "structure") {
         parameters = shape.members;
       } else if (shape.type === "list") {
         parameters = traverseParameters(path, shape.member.members, content);
