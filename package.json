@@ -2,7 +2,7 @@
   "name": "stepfunctions-sdk-autocomplete",
   "displayName": "StepFunctions SDK Integrations Autocomplete",
   "description": "Autocomplete for StepFunctions SDK integrations",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/ljacobsson/stepfunctions-sdk-autocomplete"
